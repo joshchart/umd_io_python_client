@@ -12,7 +12,7 @@ Key | Input Type | Accessed Type | Description | Notes
 ------------ | ------------- | ------------- | ------------- | -------------
 **course** | str,  | str,  | The associated course id | [optional] 
 **section_id** | str,  | str,  | A unique section identifier, always the course_id with a four-digit section number appended to it. | [optional] 
-**semester** | decimal.Decimal, int, float,  | decimal.Decimal,  | Numeric representation of the semester, in format YYYYMM | [optional] 
+**semester** | str,  | str,  | Numeric representation of the semester, in format YYYYMM | [optional] 
 **number** | str,  | str,  | The other half of section_id | [optional] 
 **seats** | str,  | str,  | The number of seats for the section. | [optional] 
 **[meetings](#meetings)** | list, tuple,  | tuple,  | Array of section meetings. | [optional] 

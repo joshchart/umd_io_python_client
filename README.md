@@ -245,3 +245,12 @@ import umd_io
 from umd_io.apis import *
 from umd_io.models import *
 ```
+
+# Recreating API
+
+```bash
+docker run --rm -v "${PWD}:/local" openapitools/openapi-generator-cli generate \
+    -i /local/swagger.json \
+    -g python \
+    -o /local/ --package-name umd_io
+```
