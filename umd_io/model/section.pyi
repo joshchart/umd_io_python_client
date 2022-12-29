@@ -41,7 +41,7 @@ class Section(
         class properties:
             course = schemas.StrSchema
             section_id = schemas.StrSchema
-            semester = schemas.NumberSchema
+            semester = schemas.StrSchema
             number = schemas.StrSchema
             seats = schemas.StrSchema
             
@@ -181,7 +181,7 @@ class Section(
         *_args: typing.Union[dict, frozendict.frozendict, ],
         course: typing.Union[MetaOapg.properties.course, str, schemas.Unset] = schemas.unset,
         section_id: typing.Union[MetaOapg.properties.section_id, str, schemas.Unset] = schemas.unset,
-        semester: typing.Union[MetaOapg.properties.semester, decimal.Decimal, int, float, schemas.Unset] = schemas.unset,
+        semester: typing.Union[MetaOapg.properties.semester, str, schemas.Unset] = schemas.unset,
         number: typing.Union[MetaOapg.properties.number, str, schemas.Unset] = schemas.unset,
         seats: typing.Union[MetaOapg.properties.seats, str, schemas.Unset] = schemas.unset,
         meetings: typing.Union[MetaOapg.properties.meetings, list, tuple, schemas.Unset] = schemas.unset,
